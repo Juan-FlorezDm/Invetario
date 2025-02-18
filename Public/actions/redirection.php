@@ -1,0 +1,1 @@
+<button onclick="window.location.href='/Public/main/Consultar.php'">Volver</button>

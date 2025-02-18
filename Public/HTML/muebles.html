@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="/styles/form.css">
+</head>
+<body>
+
+<div class="form">
+    <div>
+        <h2>Formulario de Registro</h2>
+        <form action="../actions/agregar_muebles.php" method="POST" autocomplete="off">
+            <label for="descripcion">Detalle:</label>
+            <input type="text" id="descripcion" name="descripcion" required placeholder="p. ej., Escritorio">
+    
+            <label for="serial">Serial:</label>
+            <input type="text" id="serial" name="serial" required placeholder="p. ej., S/N 555555555"> 
+    
+            <label for="oficina">Oficina:</label>
+            <input type="text" id="oficina" name="oficina" required placeholder="p. ej., Bogotá">
+    
+            <label for="asignado">Cedula de la persona a asignar:</label>
+            <input type="text" id="asignado" name="asignado" placeholder="p. ej., 5555555">
+    
+            <label for="no_de_acta">Número de Acta:</label>
+            <input type="text" id="no_de_acta" name="no_de_acta" required placeholder="p. ej., AC-32">
+    
+            <button type="submit">Agregar</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

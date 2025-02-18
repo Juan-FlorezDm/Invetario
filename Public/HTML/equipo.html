@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="./Public/styles/form.css">
+</head>
+<body>
+
+<div class="form">
+    <div>
+        <h2>Formulario de Registro</h2>
+        <form action="../actions/agregar_equipo.php" method="POST" autocomplete="off">
+            <label for="nombre_equipo">Nombre del Equipo:</label>
+            <input type="text" id="nombre_equipo" name="nombre_equipo" required placeholder="p. ej., MacBook Pro M4">
+    
+            <label for="serial">Serial:</label>
+            <input type="text" id="serial" name="serial" required placeholder="p. ej., /N 555555555">
+    
+            <label for="oficina">Oficina:</label>
+            <input type="text" id="oficina" name="oficina" required placeholder="p. ej., Bogotá">
+    
+            <label for="asignado">Cedula de la persona a asignar:</label>
+            <input type="text" id="asignado" name="asignado" required placeholder="p. ej., 3333333333">
+    
+            <label for="no_de_acta">Número de Acta:</label>
+            <input type="text" id="no_de_acta" name="no_de_acta" required placeholder="p. ej., AC-32">
+    
+            <button type="submit">Agregar</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
